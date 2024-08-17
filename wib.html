@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Unique Store</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">Cart (<span id="cart-count">0</span>)</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="products">
+            <h2>Featured Products</h2>
+            <div class="product" data-name="Product 1" data-price="29.99">
+                <img src="images/product1.jpg" alt="Product 1">
+                <h3>Product 1</h3>
+                <p>$29.99</p>
+                <button onclick="addToCart('Product 1', 29.99)">Add to Cart</button>
+            </div>
+            <div class="product" data-name="Product 2" data-price="39.99">
+                <img src="images/product2.jpg" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>$39.99</p>
+                <button onclick="addToCart('Product 2', 39.99)">Add to Cart</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Unique Store</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
